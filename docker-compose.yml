@@ -1,0 +1,8 @@
+services:
+  RabbitMQ:
+    restart: always
+    image: rabbitmq:alpine
+    ports:
+      - "5672:5672"
+    environment:
+      - DEBUG=false
